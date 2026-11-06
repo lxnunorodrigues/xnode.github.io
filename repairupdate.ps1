@@ -1,6 +1,3 @@
-*********START CODE************
-
-@ECHO OFF
 
 net stop wuauserv
 net stop cryptSvc
@@ -16,5 +13,3 @@ net start wuauserv
 net start cryptSvc
 net start bits
 net start msiserver
-
-*********END CODE************
