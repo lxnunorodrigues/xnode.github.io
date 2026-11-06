@@ -22,7 +22,7 @@ function Show-Menu
                      cls
                      'You chose option #1'
                      # Run this script
-                     Start-Process -FilePath powershell 'irm https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/x.cleaner.ps1 | iex' -Wait
+                     Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/x.cleaner.ps1')
                 } '2' {
                      cls
                      'You chose option #2'
