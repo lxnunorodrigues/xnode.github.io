@@ -9,7 +9,7 @@ $choice = Read-Host "`nEnter Choice"
 switch ($choice) {
    'P'{
          Write-Host "`nYou have selected a Repair Update"
-         irm 'https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/repair.update.ps1' | iex
+         Start-Process -FilePath powershell 'irm 'https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/repair.update.ps1' | iex'
    }
    'T'{
          Write-Host "`nYou have selected a Test Environment"
