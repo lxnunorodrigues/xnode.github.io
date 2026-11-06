@@ -15,6 +15,7 @@ function Show-Menu
           Write-Host "1: Press '1' for XCleaner"
           Write-Host "2: Press '2' for Install All Runtimes and DirectX"
           Write-Host "3: Press '3' for Repair - SMB Network Guest Folder ( Windows 11 )"
+          Write-Host ""
           Write-Host "Q: Press 'Q' to quit."
           Write-Host ""
      }
