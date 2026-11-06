@@ -1,14 +1,14 @@
 function Show-Menu
      {
           param (
-                [string]$Title = 'My Menu'
+                [string]$Title = 'X Node App by ( NR INFORMATICA Loures ) V1.0'
           )
           cls
           Write-Host "================ $Title ================"
       
           Write-Host "1: Press '1' for XCleaner"
-          Write-Host "2: Press '2' for this option."
-          Write-Host "3: Press '3' for this option."
+          Write-Host "2: Press '2' for Install All Runtimes and DirectX"
+          Write-Host "3: Press '3' for Repair - SMB Network Guest Folder ( Windows 11 )"
           Write-Host "Q: Press 'Q' to quit."
      }
 
@@ -26,11 +26,11 @@ function Show-Menu
                 } '2' {
                      cls
                      'You chose option #2'
-                     Invoke-Expression -Command 'D:\Scripts\HelloWorld.ps1'
+                     Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/runtimesAIO.ps1')
                 } '3' {
                      cls
                      'You chose option #3'
-                     & 'D:\Scripts\HelloWorld.ps1'
+                     Invoke-Expression (Invoke-RestMethod 'https://raw.githubusercontent.com/lxnunorodrigues/xnode/main/smb.repair.ps1')
                 } 'q' {
                      return
                 }
