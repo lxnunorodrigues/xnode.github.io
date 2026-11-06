@@ -1,19 +1,22 @@
 function Show-Menu
      {
           param (
-                [string]$Title = 'X Node App by ( NR INFORMATICA Loures ) V1.0'
+                [string]$Title = 'X Node App by ( NR INFORMATICA Loures ) V1.1 Beta'
           )
           cls
           Write-Host "================ $Title ================"
+          Write-Host ""
       
           Write-Host "A: Press 'A' for Activate Windows / Office [ MAS ]"
-          Write-Host "W: Press 'A' for Windows Utility"
+          Write-Host "W: Press 'W' for Windows Utility"
 
+          Write-Host ""
           
           Write-Host "1: Press '1' for XCleaner"
           Write-Host "2: Press '2' for Install All Runtimes and DirectX"
           Write-Host "3: Press '3' for Repair - SMB Network Guest Folder ( Windows 11 )"
           Write-Host "Q: Press 'Q' to quit."
+          Write-Host ""
      }
 
     do
